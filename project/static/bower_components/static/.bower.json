@@ -1,0 +1,7 @@
+{
+  "name": "static",
+  "_source": "/srv/www/django/djbase/project/static",
+  "_target": "*",
+  "_originalSource": "/srv/www/django/djbase/project/static/",
+  "_direct": true
+}

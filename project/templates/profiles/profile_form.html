@@ -1,0 +1,32 @@
+{% extends "page_base.html" %}
+
+{% block page_title %}{{ block.super }}Edit Profile{% endblock page_title %}
+
+<div class="row">
+{% block content %}
+
+	<div class="row">
+		<div class="large-12 columns">
+			<h2 class="subheader">Editing {{profile.display_name}}'s Profile</h2>
+
+			<p><strong>Formatting:</strong> HTML/Javascript will be removed. You can format your text with <a href="http://blog.lib.umn.edu/crosb002/leadership/Markdown_Cheat_Sheet.pdf" target="_blank">markdown</a>.</p>
+
+			<form action="{% url 'profile_update' %}" method="post">
+			{% csrf_token %}
+
+			<label>{{form.bio.label}}</label>
+			{{form.bio}}
+			<p class="helptext">{{form.bio.help_text}}</p>
+
+			<label>{{form.influences.label}}</label>
+			{{form.influences}}
+			<p class="helptext">{{form.influences.help_text}}</p>
+
+			<input type="submit" value="Submit">
+			</form>
+
+		</div>
+	</div>
+
+{% endblock content %}
+</div>
