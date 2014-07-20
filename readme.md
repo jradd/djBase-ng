@@ -1,5 +1,7 @@
 # About
+This is a base project for Django REST endpoint plus generic  api with AngularJS frontend using the elegant and practical Zurb Foundation for styling.
 
+_This readme is very vague, and only meant for myself (and others that know the basics of Django + Angular, Foundation, and Docker. Pretty specific and limited crowd I know :)_
 # Docker
 ### PostGresQL Container with PostGIS
 
