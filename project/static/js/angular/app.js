@@ -2,4 +2,4 @@
    "use strict";
 }());
 
-var MyApp = angular.module('Tristano', ['ngRoute'])
+var MyApp = angular.module('djBase', ['ngRoute'])
